@@ -15,8 +15,7 @@ public class Background : MonoBehaviour
 
         if (transform.position.x <= endX)
         {
-            Vector2 pos = new Vector2(startX, transform.position.y);
-            transform.position = pos;
+            transform.position = new Vector2(startX, transform.position.y); ;
         }
     }
 }

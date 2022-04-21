@@ -3,6 +3,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     private float timeBetweenSpawn;
+    private float currentTime;
     private bool isMobile;
 
     [SerializeField]
@@ -21,25 +22,17 @@ public class Spawner : MonoBehaviour
     {
         timeBetweenSpawn = 2f;
         isMobile = Application.isMobilePlatform;
+        currentTime = isMobile ? minTimeMobile : minTime;
     }
 
     void Update()
     {
         if (timeBetweenSpawn <= 0)
         {
-            float time;
-            if (!isMobile)
-            {
-                time = minTime;
-            }
-            else 
-            {
-                time = minTimeMobile;
-            }
             int selectAsteroidVariant = Random.Range(0, asteroidsVariants.Length);
             Instantiate(asteroidsVariants[selectAsteroidVariant], transform.position, Quaternion.identity);
             timeBetweenSpawn = startTimeBetweenSpawn;
-            if (startTimeBetweenSpawn > time)
+            if (startTimeBetweenSpawn > currentTime) 
             {
                 startTimeBetweenSpawn -= decreaseTime;
             }

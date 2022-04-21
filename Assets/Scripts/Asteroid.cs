@@ -15,9 +15,6 @@ public class Asteroid : MonoBehaviour
     private GameObject eff;
     [SerializeField]
     private GameObject sound;
-    
-
-
     void Start()
     {
         animator = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();

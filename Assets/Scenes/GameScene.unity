@@ -149,7 +149,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44330727}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1930962695}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 186128165}
   - component: {fileID: 186128164}
   m_Layer: 5
-  m_Name: option
+  m_Name: Option
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,7 +228,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186128162}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1930962695}
@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -384,6 +385,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ada1dca0bddb144c9cea1539c750847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthDisplay: {fileID: 1529760747}
+  scoreText: {fileID: 547537102}
+  gamePanel: {fileID: 767552062}
+  resultPanel: {fileID: 1930962694}
+  score: {fileID: 1694749894}
+  record: {fileID: 930295785}
+  option: {fileID: 186128164}
+  sm: {fileID: 1433538039}
+  player: {fileID: 1663950212}
+  spawner: {fileID: 1136952619}
 --- !u!1 &523118663
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +501,7 @@ RectTransform:
   - {fileID: 1930962695}
   - {fileID: 767552063}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -497,7 +520,7 @@ GameObject:
   - component: {fileID: 547537103}
   - component: {fileID: 547537102}
   m_Layer: 5
-  m_Name: score
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -511,7 +534,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547537100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 767552063}
@@ -519,8 +542,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -125.5, y: -27.299988}
-  m_SizeDelta: {x: 250, y: 50}
+  m_AnchoredPosition: {x: -104.68005, y: -27.299988}
+  m_SizeDelta: {x: 208.37, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547537102
 MonoBehaviour:
@@ -590,7 +613,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767552062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 547537101}
@@ -652,7 +675,7 @@ GameObject:
   - component: {fileID: 797872006}
   - component: {fileID: 797872007}
   m_Layer: 0
-  m_Name: Nebula Blue (1)
+  m_Name: BG (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -735,7 +758,7 @@ GameObject:
   - component: {fileID: 930295786}
   - component: {fileID: 930295785}
   m_Layer: 5
-  m_Name: bestTry
+  m_Name: BestTry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,7 +772,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930295783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1930962695}
@@ -813,7 +836,7 @@ GameObject:
   - component: {fileID: 1120664384}
   - component: {fileID: 1120664385}
   m_Layer: 0
-  m_Name: Nebula Blue
+  m_Name: BG (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,12 +952,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136952619}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.33, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.33, y: 0, z: 95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1272877847
 GameObject:
@@ -982,7 +1005,7 @@ Transform:
   - {fileID: 1120664384}
   - {fileID: 797872006}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1433538038
 GameObject:
@@ -1015,7 +1038,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a918c0d4cff54c347951e91ec33713a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 547537102}
 --- !u!50 &1433538040
 Rigidbody2D:
   serializedVersion: 4
@@ -1075,7 +1097,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529760745
 GameObject:
@@ -1089,7 +1111,7 @@ GameObject:
   - component: {fileID: 1529760748}
   - component: {fileID: 1529760747}
   m_Layer: 5
-  m_Name: health
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1103,7 +1125,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529760745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 767552063}
@@ -1166,9 +1188,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1663950214}
   - component: {fileID: 1663950213}
-  - component: {fileID: 1663950212}
   - component: {fileID: 1663950216}
   - component: {fileID: 1663950215}
+  - component: {fileID: 1663950212}
   - component: {fileID: 1663950217}
   m_Layer: 0
   m_Name: Ship
@@ -1194,14 +1216,6 @@ MonoBehaviour:
   maxHeight: 3.15
   minHeight: -3.15
   health: 3
-  healthDisplay: {fileID: 1529760747}
-  infoPanel: {fileID: 767552062}
-  panel: {fileID: 1930962694}
-  spawner: {fileID: 1136952619}
-  score: {fileID: 1694749894}
-  record: {fileID: 930295785}
-  option: {fileID: 186128164}
-  sm: {fileID: 1433538039}
 --- !u!212 &1663950213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1261,7 +1275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663950211}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1338,7 +1352,7 @@ GameObject:
   - component: {fileID: 1694749895}
   - component: {fileID: 1694749894}
   m_Layer: 5
-  m_Name: score (1)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1352,7 +1366,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694749892}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1930962695}
@@ -1484,7 +1498,7 @@ GameObject:
   - component: {fileID: 1930962697}
   - component: {fileID: 1930962696}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: ResultPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1498,7 +1512,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930962694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1694749893}
